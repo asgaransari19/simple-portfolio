@@ -10,10 +10,11 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Redirect exact path={pagePaths.root} to={pagePaths.asgar} />
         <Route path={pagePaths.asgar} component={Asgar} />
         <Route path={pagePaths.aboutme} component={aboutMe} />
         <Route path={pagePaths.me} component={me} />
-        <Route path = {pagePaths.mywork} component={Mywork} />
+        <Route path={pagePaths.mywork} component={Mywork} />
       </Switch>
 
     </Router>
